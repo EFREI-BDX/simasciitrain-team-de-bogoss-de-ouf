@@ -4,11 +4,7 @@ namespace simasciitrain {
 
 Wagons::Wagons() : wagons() {}
 
-Wagons::~Wagons() {
-  for (auto wagon : wagons) {
-    delete wagon;
-  }
-}
+Wagons::~Wagons() = default;
 
 Wagons* Wagons::addWagon(AbstractWagon* wagon) {
   wagons.push_back(wagon);
